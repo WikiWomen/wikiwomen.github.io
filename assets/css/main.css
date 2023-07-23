@@ -2430,6 +2430,14 @@ footer {
   margin-bottom: 30px;
   padding: 0px 70px;
 }
+#hero-area .contents .banner-desc-2 {
+  font-size: 14px;
+  font-weight: 400;
+  color: #fff;
+  line-height: 30px;
+  margin-bottom: 30px;
+  padding: 0px 70px;
+}
 
 #hero-area .contents .btn {
   margin: 0px 10px 0px;
