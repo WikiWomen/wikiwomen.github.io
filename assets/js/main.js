@@ -90,6 +90,23 @@
         return false;
       });
 
-  });      
+    });   
+
+    var url = ['https://upload.wikimedia.org/wikipedia/commons/4/4c/WikiWomenCamp_2017_-_D%C3%ADa_1_-_21.jpg' ,
+               'https://upload.wikimedia.org/wikipedia/commons/thumb/2/2b/WikiWomenCamp-Session.JPG/1200px-WikiWomenCamp-Session.JPG?20120604173913',
+               'https://upload.wikimedia.org/wikipedia/commons/thumb/f/ff/Group_Photo_WikiWomenCamp_2017.jpg/1200px-Group_Photo_WikiWomenCamp_2017.jpg?20170708201628',
+               'https://upload.wikimedia.org/wikipedia/commons/thumb/d/de/WikiWomen%27s_Lunch_Wikimania_2017.jpg/1200px-WikiWomen%27s_Lunch_Wikimania_2017.jpg?20170812175129',
+               'https://upload.wikimedia.org/wikipedia/commons/thumb/5/55/Wikiwomen%27s_Lunch_Wikimania_2016_12.jpg/1200px-Wikiwomen%27s_Lunch_Wikimania_2016_12.jpg?20160626131410',
+               'https://upload.wikimedia.org/wikipedia/commons/thumb/8/88/WikiWomen%27s_Lunch%2C_Wikimania_2012.jpg/1200px-WikiWomen%27s_Lunch%2C_Wikimania_2012.jpg?20130402182122',
+               'https://upload.wikimedia.org/wikipedia/commons/thumb/f/f7/WikiWomen%27s_Lunch%2C_Wikimania_2014.jpg/1200px-WikiWomen%27s_Lunch%2C_Wikimania_2014.jpg?20140918164810',
+               'https://upload.wikimedia.org/wikipedia/commons/thumb/c/c2/Women_lunch_of_WCI_2023_at_Hyderabad_India_01.jpg/1200px-Women_lunch_of_WCI_2023_at_Hyderabad_India_01.jpg?20230613122852'
+               ];
+    var curentImageIndex = 0;
+    setInterval(function(){ 
+      console.log(url[curentImageIndex])
+     var p = $('.hero-area-bg');
+     p.css("background","url("+url[curentImageIndex++] + ")");
+     if(curentImageIndex>= url.length){curentImageIndex = 0}
+     }, 3000);   
 
 }(jQuery));
