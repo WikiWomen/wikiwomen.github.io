@@ -2371,7 +2371,7 @@ footer {
 3. Hero Area
 ========================================================================== */
 .hero-area-bg {
-  background: url(https://upload.wikimedia.org/wikipedia/commons/c/c2/Women_lunch_of_WCI_2023_at_Hyderabad_India_01.jpg) no-repeat;
+  background: url('/assets/img/background/1.jpg') no-repeat;
   background-size: cover;
 }
 
